@@ -1,0 +1,57 @@
+.article
+  $this: &
+  display: flex
+  margin-bottom: 50px
+  align-items: center
+  &:nth-of-type(even)
+    flex-direction: row-reverse
+    #{$this}__img
+      padding-left: 72px
+      padding-right: 0
+  &__img
+    padding-right: 72px
+    max-width: 627px
+  &__col
+    padding-top: 2px
+  &__title
+    font-size: 22px
+    letter-spacing: -0.7px
+    margin-bottom: 35px
+
+@media screen and (max-width: 1100px)
+ .article 
+    $this: &
+    margin-bottom: 30px
+    &:nth-of-type(even)
+      flex-direction: row
+      #{$this}__img
+        padding-left: 0px
+        padding-right: 10px
+    &__img
+      width: 50%
+      object-fit: cover
+      padding-right: 10px
+    &__col
+      width: 50%
+      padding-left: 42px
+      padding-top: 0
+    &__title
+      line-height: 1.5
+
+@media screen and (max-width: 750px)
+  .article 
+    $this: &
+    flex-direction: column
+    margin-bottom: 25px
+    &:nth-of-type(even)
+      flex-direction: column
+      #{$this}__img
+        padding-right: 0
+    &__img
+      width: 100%
+      padding: 0
+    &__col
+      width: 100%
+      padding-left: 0
+    &__title
+      margin-bottom: 18px

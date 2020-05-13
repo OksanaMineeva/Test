@@ -1,0 +1,32 @@
+@import 'base/global'
+@import 'components/form'
+@import 'components/article'
+@import 'containers/hero'
+@import 'containers/articles'
+
+.title
+  font-size: 30px
+  letter-spacing: -1.5px
+  line-height: 1.2
+  margin-bottom: 30px
+
+@media screen and (max-width: 750px)
+  .title
+    font-size: 26px
+    letter-spacing: -1.3px
+    max-width: 260px
+    line-height: 1.4
+    margin-bottom: 26px
+
+.pre-title
+  text-transform: uppercase
+  color: $secondary-color
+  font-size: 14px
+  font-weight: 700
+  letter-spacing: 1px
+  margin-bottom: 12px
+
+.text
+  color: $main-color
+  line-height: 1.8
+  letter-spacing: -0.1px

@@ -1,0 +1,62 @@
+.form
+  background-color: #1C1C1C
+  opacity: 0.9
+  border-radius: 10px
+  flex: 0 0 411px
+  padding: 78px 54px 57px 60px
+  font-size: 16px
+  margin-right: -205px
+  &__input
+    display: block
+    width: 100%
+    background: #FFFFFF
+    border-radius: 4px
+    border: none
+    padding: 17px 32px 15px
+    letter-spacing: 1px
+    margin-bottom: 20px
+    &::placeholder
+      font-size: 16px
+      line-height: 24px
+      color: #1C1C1C
+  &__btn
+    background: #0AD9C6
+    border-radius: 6px
+    width: 100%
+    border: none
+    padding: 14px 32px 13px
+    letter-spacing: 0.2px
+    margin-bottom: 3px
+    font-size: 16px
+    line-height: 24px
+    font-weight: 700
+    &:hover
+      background: transparentize(#0AD9C6, .2)
+  &__info
+    font-weight: 300
+    font-size: 13px
+    line-height: 1.77
+    color: #7A7A7A
+    position: relative
+    padding-left: 12px
+    &::before
+      content: '*'
+      position: absolute
+      left: 0px
+
+@media screen and (max-width: 1160px)
+  .form
+    flex: 0 0 343px
+    margin-right: -33.7%
+    padding: 41px 25px 22px 21px
+
+@media screen and (max-width: 750px)
+  .form
+    margin-right: -14%
+    margin-left: -14%
+    padding: 41px 23px 22px 21px
+    margin-bottom: 50px
+
+@media screen and (max-width: 480px)
+  .form
+    margin-left: 0
